@@ -1,0 +1,216 @@
+--- !!python/object/apply:collections.OrderedDict
+- - - name
+    - bmod_destress
+  - - description
+    - definition of DESTRESS building types, using fuzzy compatibility formulation
+  - - version
+    - '1.0'
+  - - classes
+    - - D_MUR1
+      - D_MUR3
+      - D_MUR2
+      - D_RC1
+      - D_MR3
+      - D_MR2
+      - D_MR1
+      - D_W1
+  - - weights
+    - !!python/object/apply:collections.OrderedDict
+      - - - mat_type
+          - 0.35
+        - - mat_tech
+          - 0.2
+        - - mat_prop
+          - 0.05
+        - - llrs
+          - 0.2
+        - - llrs_duct
+          - 0.1
+        - - floor_mat
+          - 0.1
+  - - fuzzy_values
+    - !!python/object/apply:collections.OrderedDict
+      - - - +++
+          - - 1
+            - 0.5
+            - 1
+        - - ++
+          - - 0.6
+            - 0.3
+            - 0.9
+        - - +
+          - - 0.3
+            - 0
+            - 0.6
+        - - '0'
+          - - 0
+            - -0.5
+            - 0.5
+        - - '-'
+          - - -0.3
+            - -0.6
+            - 0
+        - - --
+          - - -0.6
+            - -0.9
+            - -0.3
+        - - '---'
+          - - -1
+            - -1
+            - -0.5
+  - - definition
+    - D_MR1:
+        floor_mat:
+          FN: +++
+        height_1:
+          H_MAX: 1
+          H_MIN: 1
+        llrs:
+          LH: +++
+        llrs_duct: {}
+        mat_prop:
+          MO99: +++
+        mat_tech:
+          FW: +++
+        mat_type:
+          C99: --
+          CR: --
+          M99: ++
+          MR: +++
+      D_MR2:
+        floor_mat:
+          FC: +++
+          FW: --
+        height_1:
+          H_MAX: 2
+          H_MIN: 2
+        llrs:
+          LH: +++
+        llrs_duct: {}
+        mat_prop:
+          MO99: +++
+        mat_tech:
+          FW: +++
+        mat_type:
+          C99: --
+          CR: --
+          M99: ++
+          MR: +++
+      D_MR3:
+        floor_mat:
+          FW: +++
+        height_1:
+          H_MAX: 2
+          H_MIN: 2
+        llrs:
+          LH: +++
+        llrs_duct: {}
+        mat_prop:
+          MO99: +++
+        mat_tech:
+          FW: +++
+        mat_type:
+          C99: --
+          CR: --
+          M99: ++
+          MR: +++
+      D_MUR1:
+        floor_mat:
+          FN: +++
+        height_1:
+          H_MAX: 1
+          H_MIN: 1
+        llrs:
+          LO: +++
+        llrs_duct: {}
+        mat_prop:
+          MO99: +++
+        mat_tech:
+          CLBRH: +++
+          CLBRS: +++
+          MUN99: +++
+        mat_type:
+          C99: --
+          CR: '---'
+          M99: ++
+          MUR: +++
+      D_MUR2:
+        floor_mat:
+          FC: +++
+          FW: '---'
+        height_1:
+          H_MAX: 2
+          H_MIN: 2
+        llrs:
+          LO: +++
+        llrs_duct: {}
+        mat_prop:
+          MO99: +++
+        mat_tech:
+          MUN99: +++
+        mat_type:
+          C99: --
+          CR: '---'
+          M99: ++
+          MUR: +++
+      D_MUR3:
+        floor_mat:
+          FW: +++
+        height_1:
+          H_MAX: 2
+          H_MIN: 2
+        llrs:
+          LH: +++
+          LO: ++
+        llrs_duct:
+          DNO: +++
+        mat_prop:
+          MO99: +++
+        mat_tech:
+          CLBRS: +++
+          MUN99: +++
+        mat_type:
+          C99: --
+          CR: '---'
+          M99: ++
+          MUR: +++
+      D_RC1:
+        floor_mat:
+          FC: +++
+          FW: --
+        height_1:
+          H_MAX: 5
+          H_MIN: 1
+        llrs:
+          LFINF: +++
+          LO: +++
+        llrs_duct:
+          DUC: +++
+        mat_prop:
+          MO99: +++
+          MOC: +++
+          MON: +++
+        mat_tech:
+          CIP: +++
+        mat_type:
+          C99: ++
+          CR: +++
+      D_W1:
+        floor_mat:
+          FN: +++
+        height_1:
+          H_MAX: 1
+          H_MIN: 1
+        llrs:
+          LO: +++
+        llrs_duct: {}
+        mat_prop:
+          MON: +++
+        mat_tech:
+          WLI: +++
+        mat_type:
+          C99: --
+          CR: '---'
+          M99: --
+          MR: '---'
+          W: +++
