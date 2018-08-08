@@ -1,6 +1,6 @@
 # Risk-oriented, bottom-up modelling of building portfolios with faceted taxonomies 
 ### Implementation of fuzzy scoring to assign building vulnerability classes starting from faceted taxonomy descriptions. 
-#### Massimiliano Pittore, Michael Haas, Konstantinos G. Megalooikonomou and Vitor Silva
+#### Massimiliano Pittore, Michael Haas and Konstantinos G. Megalooikonomou
 
  Copyright © GFZ-Potsdam 2018
  
