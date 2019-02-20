@@ -14,3 +14,5 @@ You should have received a copy of the GNU General Public License along with thi
 ## Introduction
 The following notebook implements the methodology described in the companion paper "Risk-oriented, bottom-up modelling of building portfolios with faceted taxonomies" Pittore et al., 2018.
 The methodology aims at classifying an unknown building based on its taxonomic description according to the GEM taxonomy v2.0 (Brzev et al., 2013).
+
+
